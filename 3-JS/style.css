@@ -1,0 +1,29 @@
+*{
+    background-color: black;
+}
+
+
+
+
+
+
+{
+    precio = prompt('Coloque el precio que quiere calcular con IVA')
+    
+    if(precio === null || precio == '' || isNaN(precio)){
+        alert('Debe colocar solo datos numericos')
+
+    }else{
+        tipo_factura = prompt('Coloque el tipo de factura que quiere recibir: A o B')
+        
+        if(tipo_factura === 'A'){
+            alert('El valor del iva es ' + IVA + ' y el precio del producto ' + ' $' + precio)
+
+
+        }else if(tipo_factura === 'B'){
+             precio = precio * IVA
+            alert('El valor del producto con IVA incluido es ' + precio)
+
+        }
+    }
+}
